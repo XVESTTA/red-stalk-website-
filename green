@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Stalk</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .welcome-message {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 10px red;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        .welcome-message h1 {
+            font-size: 1.8em;
+            color: red;
+            margin: 0 0 20px 0;
+        }
+        .rules-section, .role-selection, .payment-section {
+            margin: 50px 0;
+        }
+        .rules-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .rules-section li {
+            margin: 10px 0;
+        }
+        .role-selection {
+            text-align: center;
+        }
+        .role-selection button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .role-selection button:hover {
+            background-color: darkred;
+        }
+        .payment-section {
+            text-align: center;
+        }
+        .payment-section .price-option {
+            margin: 20px 0;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px red;
+        }
+        .payment-section button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .payment-section button:hover {
+            background-color: darkred;
+        }
+        .curator-message {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #222;
+            border-left: 5px solid red;
+        }
+        .curator-message p {
+            margin: 10px 0;
+        }
+        .curator-intro {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-curator {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-curator a {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .contact-curator a:hover {
+            background-color: darkred;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #111;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Message -->
+        <section class="welcome-message">
+            <h1>Red Stalk</h1>
+        </section>
+
+        <!-- Rules Section -->
+        <section class="rules-section">
+            <h2>Правила игры</h2>
+            <ul>
+                <li><strong>Для Кошек:</strong> Цель — поймать Мышь. Наносить удары можно только в руку, бедро или лопатку.</li>
+                <li><strong>Для Мышей:</strong> Избегайте встречи с Кошкой, используя стратегию и скрытность.</li>
+                <li>Запрещено нарушать границы зоны игры.</li>
+                <li>Каждое действие отслеживается куратором. Будьте внимательны!</li>
+            </ul>
+        </section>
+
+        <!-- Role Selection -->
+        <section class="role-selection">
+            <h2>Выбор роли</h2>
+            <button>Я — Кошка</button>
+            <button>Я — Мышь</button>
+        </section>
+
+        <!-- Payment Section -->
+        <section class="payment-section">
+            <h2>Тарифы</h2>
+            <div class="price-option">
+                <h3>1 неделя</h3>
+                <p>Стоимость: $700</p>
+                <button>Выбрать</button>
+            </div>
+            <div class="price-option">
+                <h3>2 недели</h3>
+                <p>Стоимость: $1,200</p>
+                <button>Выбрать</button>
+            </div>
+            <div class="price-option">
+                <h3>1 месяц</h3>
+                <p>Стоимость: $2,500</p>
+                <button>Выбрать</button>
+            </div>
+            <div class="price-option">
+                <h3>2 месяца</h3>
+                <p>Стоимость: $4,000</p>
+                <button>Выбрать</button>
+            </div>
+        </section>
+
+        <!-- Curator Intro -->
+        <section class="curator-intro">
+            <p>Каждый шаг имеет значение. Прочитайте правила и сделайте выбор.</p>
+        </section>
+
+        <!-- Curator Message -->
+        <section class="curator-message">
+            <h2>Сообщение от куратора</h2>
+            <p>Red Stalk. Я — Агата, и я буду следить за ходом игры. Здесь не место для слабых или нерешительных. Каждый ваш шаг будет отслеживаться, каждое ваше решение может стать решающим.</p>
+            <p>Вы вступили в игру, где всё не так, как кажется. Будьте осторожны и умны, ведь в этой игре только самые хитрые могут выжить. Помните, что я всегда рядом, следя за вами. Удачи — она вам понадобится.</p>
+        </section>
+
+        <!-- Contact Curator Button -->
+        <section class="contact-curator">
+            <a href="https://www.instagram.com/agata.stalkr/profilecard/?igsh=bm9uN3p5amx5aGd2" target="_blank">
+                Связаться с куратором
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Red Stalk. Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>
