@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Stalk</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .welcome-message {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 10px red;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        .welcome-message h1 {
+            font-size: 1.8em;
+            color: red;
+            margin: 0 0 20px 0;
+        }
+        .registration-form {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .registration-form input {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+        .registration-form button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .registration-form button:hover {
+            background-color: darkred;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #111;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Message -->
+        <section class="welcome-message">
+            <h1>Red Stalk</h1>
+        </section>
+
+        <!-- Registration Form -->
+        <section class="registration-form">
+            <h2>Регистрация</h2>
+            <form id="registrationForm">
+                <input type="text" id="username" placeholder="Введите имя" required><br>
+                <input type="password" id="password" placeholder="Введите пароль" required><br>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Red Stalk. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Обработчик отправки формы
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем стандартную отправку формы
+
+            // Получаем значения имени и пароля
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Можно добавить проверку данных или отправку на сервер
+
+            // После успешной регистрации перенаправляем на другую страницу
+            window.location.href = 'post-registration.html';
+        });
+    </script>
+</body>
+</html>
